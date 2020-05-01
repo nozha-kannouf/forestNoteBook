@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import be.intecbrussel.the_notebook.enteties.animal_enteties.*;
 import be.intecbrussel.the_notebook.enteties.plant_enteties.Plant;
@@ -109,7 +111,10 @@ public class ForestNotebook {
 	}
 
 	public void sortAnimalsByName() {
-		animals.sort(Comparator.comparing(Animal:: getName));
+		animals = animals.stream()
+						 .filter(Objects:: nonNull)
+						 .sorted(Comparator.comparing(Animal:: getName))
+						 .collect(Collectors.toList());
 	}
 	
 	public void sortPlantsByName() {
