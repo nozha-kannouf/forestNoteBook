@@ -84,10 +84,9 @@ public class NatureApp {
 		/*
 		 * Deel2 
 		 */
-	System.out.println("----------------------------------------------------------------");
 	System.out.println("Number of animals in the nootbook is: "+ notebook.getAnimalCount());
 	System.out.println("Number of plants in the nootbook is: "+ notebook.getPlantCount());
-	System.out.println("----------------------------------------------------------------");
+	System.out.println("\n\n----------------------------------------------------------------");
 	
 	notebook.printNotebook();
 	System.out.println("----------------------------------------------------------------");
@@ -98,7 +97,7 @@ public class NatureApp {
 	System.out.println("\n List of omnivores: ");
 	notebook.getOmnivores().forEach(System.out:: println);
 	
-	System.out.println("----------------------------------------------------------------");
+	System.out.println("\n\n----------------------------------------------------------------");
 	System.out.println("Print animals and plants sorted by name: ");
 	System.out.println("----------------------------------------------------------------");
 	
@@ -106,7 +105,7 @@ public class NatureApp {
 	notebook.sortPlantsByName();
 	notebook.printNotebook();
 	
-	System.out.println("----------------------------------------------------------------");
+	System.out.println("\n\n----------------------------------------------------------------");
 	System.out.println("Print animals and plants sorted by height: ");
 	System.out.println("----------------------------------------------------------------");
 	notebook.sortAnimalsByHeight();

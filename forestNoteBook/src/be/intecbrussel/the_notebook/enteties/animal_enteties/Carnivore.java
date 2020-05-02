@@ -22,6 +22,7 @@ public class Carnivore extends Animal {
 	@Override
 	public String toString() {
 		return "Name: " + getName()
+				+", type = " + getClass().getSimpleName()
 				+", maximum food size = " + getMaxFoodSize() 
 				+", weight = " + getWeight()
 				+", height = " + getHeight() 

@@ -42,6 +42,7 @@ public class Omnivore extends Animal {
 	@Override
 	public String toString() {
 		return "Name: " + getName() 
+			+", type = " + getClass().getSimpleName()
 			+ ", plantDiet = {" + plantDiet.stream().map(Plant::getName).collect(Collectors.joining(", "))+"}"
 			+ ", maximum food size = " + maxFoodSize 
 			+ ", weight = "+ getWeight() 

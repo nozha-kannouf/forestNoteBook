@@ -22,6 +22,7 @@ public class Weed extends Plant {
 	@Override
 	public String toString() {
 		return "Name: " + getName()
+				+", type = " + getClass().getSimpleName()
 				+", area = " + area 
 				+", height = " + getHeight();
 	}

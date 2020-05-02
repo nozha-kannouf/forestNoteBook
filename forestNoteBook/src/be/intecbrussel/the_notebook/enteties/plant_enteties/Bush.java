@@ -31,6 +31,7 @@ public class Bush extends Plant {
 	@Override
 	public String toString() {
 		return "Name: " + getName()
+				+", type = " + getClass().getSimpleName()
 				+", leaf type = " + leafType 
 				+", fruit = " + fruit
 				+", height = " + getHeight();
