@@ -104,7 +104,6 @@ public class ForestNotebook {
 		System.out.println("NOTEBOOK DETAILS: \n");
 		
 		System.out.println("\n ----->Planten: -----------------------with total: " + getPlantCount() + "\n");
-		//plants.forEach(p -> System.out.println("*" + p.getName() + ", Height: " + p.getHeight()));
 		plants.forEach(p -> System.out.println("*" + p));
 		
 		System.out.println("\n ----->Animals: -----------------------with total: " + getAnimalCount() + "\n");
